@@ -297,87 +297,106 @@
         </section>
     </main>
 
-    <footer id="footer" class="footer position-relative dark-background">
+    <footer id="footer" class="bg-[var(--background-color)] text-[var(--default-color)] font-['Urbanist',sans-serif]">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
-        <div class="footer-newsletter">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-6">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-                        <form action="forms/newsletter.php" method="post" class="php-email-form">
-                            <div class="newsletter-form"><input type="email" name="email" placeholder="E-mail"><input
-                                    type="submit" value="Subscribe">
-                            </div>
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container footer-top">
-            <div class="row gy-4">
-                <div class="col-lg-4 col-md-6 footer-about">
-                    <a href="index.html" class="d-flex align-items-center">
-                        <span class="sitename">Tour</span>
+                <!-- About -->
+                <div class="footer-about">
+                    <a href="index.html" class="flex items-center mb-4">
+                        <span
+                            class="sitename text-[2rem] text-[var(--heading-color)] font-['Josefin_Slab',serif] flex items-center">
+                            <i class="bi bi-building text-[var(--accent-color)] mr-2"></i>
+                            Guided T Paris
+                        </span>
                     </a>
-                    <div class="footer-contact pt-3">
-                        <p>A108 Adam Street</p>
-                        <p>New York, NY 535022</p>
-                        <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                        <p><strong>Email:</strong> <span>info@example.com</span></p>
+
+                    <div class="footer-contact space-y-2 text-sm">
+                        <p class="flex items-center">
+                            <i class="bi bi-geo-alt text-[var(--accent-color)] mr-2"></i>
+                            12 Rue de Paris, 75001 Paris, France
+                        </p>
+                        <p class="flex items-center">
+                            <i class="bi bi-telephone text-[var(--accent-color)] mr-2"></i>
+                            +33 1 23 45 67 89
+                        </p>
+                        <p class="flex items-center">
+                            <i class="bi bi-envelope text-[var(--accent-color)] mr-2"></i>
+                            info@guidedtparis.com
+                        </p>
                     </div>
+
+                    <!-- Newsletter Form -->
+                    <form class="mt-4 flex">
+                        <input type="email" placeholder="Receive news ." required
+                            class="rounded-l-full border border-gray-200 p-3 text-base bg-white text-gray-900 flex-1 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)]">
+                        <button type="submit"
+                            class="rounded-r-full bg-[var(--accent-color)] text-white font-bold px-6 text-base hover:bg-opacity-90 transition">
+                            <i class="bi bi-envelope"></i>
+                        </button>
+                    </form>
                 </div>
 
-                <div class="col-lg-2 col-md-3 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <!-- Paris Links -->
+                <div class="footer-links">
+                    <h4 class="text-[var(--heading-color)] font-['Josefin_Slab',serif] text-lg mb-3">Paris Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-[var(--accent-color)] hover:underline">Home</a></li>
+                        <li><a href="#featured-destinations" class="hover:text-[var(--accent-color)]">Destinations</a>
+                        </li>
+                        <li><a href="gallery.html" class="hover:text-[var(--accent-color)]">Gallery</a></li>
+                        <li><a href="blog.html" class="hover:text-[var(--accent-color)]">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-[var(--accent-color)]">Contact</a></li>
                     </ul>
                 </div>
 
-                <div class="col-lg-2 col-md-3 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+                <!-- Resources -->
+                <div class="footer-links">
+                    <h4 class="text-[var(--heading-color)] font-['Josefin_Slab',serif] text-lg mb-3">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[var(--accent-color)]">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-[var(--accent-color)]">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-[var(--accent-color)]">Refund Policy</a></li>
                     </ul>
                 </div>
 
-                <div class="col-lg-4 col-md-12">
-                    <h4>Follow Us</h4>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-                    <div class="social-links d-flex">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                <!-- Social -->
+                <div>
+                    <h4 class="text-[var(--heading-color)] font-['Josefin_Slab',serif] text-lg mb-3">Follow Us in Paris
+                    </h4>
+                    <p class="text-sm mb-3">Follow us for inspiration and special deals in Paris</p>
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="bg-[var(--accent-color)] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-80 transition">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-[var(--accent-color)] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-80 transition">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-[var(--accent-color)] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-80 transition">
+                            <i class="bi bi-youtube"></i>
+                        </a>
                     </div>
                 </div>
-
             </div>
         </div>
 
-        <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights
-                    Reserved</span></p>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you've purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Copyright -->
+        <div class="text-center py-4 border-t border-gray-300 text-sm">
+            <p>
+                <i class="bi bi-cloud-sun text-[var(--accent-color)]"></i>
+                © Copyright
+                <strong class="px-1 text-[var(--heading-color)]">Guided T Paris</strong>
+                All Rights Reserved
+            </p>
+            <div>
+                Designed by
+                <a href="https://bootstrapmade.com/"
+                    class="text-[var(--accent-color)] hover:underline">BootstrapMade</a>
             </div>
         </div>
-
     </footer>
 
     <!-- Scroll Top -->
